@@ -1,0 +1,233 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.ques {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  width: 50px; 
+  height: 50px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+  border: solid 2px rgb(65, 65, 65);
+  border-radius: 100%;
+  text-align: center;
+  z-index: 20;
+}
+.ques:hover {
+  background-color: rgb(238,149,147);
+}
+.ques > svg {
+  color: rgb(65, 65, 65);
+  transform: translate(-3px,-2px);
+}
+
+a[target="_blank"]::after{
+  content:'';
+  display:inline-block;
+  background-image:url(/link.svg);
+  width:1em;
+  height:1em;
+  background-size: contain;
+  vertical-align: middle;
+}
+a[target="_blank"]:hover {
+  cursor: pointer;
+  color: red;
+}
+
+@media (max-width: 3000px) {
+  .container {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 600px;
+    margin: 10px;
+    padding: 1em 0 3em 0;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .img_Mbl {
+    display: none;
+  }
+  .video_Mbl {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .img_PC {
+    display: none;
+  }
+  .video_PC {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    position: absolute;
+    top: 10px;
+    width: 80%;
+    
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+/* PCCSとは？　*/
+.anno > li {
+  text-align: justify;
+  text-indent: 1em;
+  position: relative;
+  font-size: 10px;
+  color: rgb(230, 89, 35);
+}
+.anno > li::before {
+  content: "*";
+  font-size: 12px;
+  position: absolute;
+  left: -0.5em;
+  top: 0.15em;
+}
+.whatIsPCCS > ul {
+    padding-left: 0em;
+    list-style: none;
+    font-size: 13px;
+    text-align: justify;
+}
+
+/* 使い方　*/
+.howToUse > ul {
+    font-size: 13px;
+    text-align: justify;
+    padding-left: 1.5em;
+}
+.howToUse > ul > li {
+  margin-bottom: 0.8em;
+}
+.howToUse > ul > details {
+  font-size: 12px;
+  margin-top: -1em;
+  margin-bottom: 0.8em;
+}
+.howToUse > ul > details > summary {
+  cursor: pointer;
+  color: blue;
+}
+.howToUse > .anno > li {
+  list-style: none;
+  margin-left: -1.5em;
+}
+.svgIcon {
+  top: 245px;
+  left: 63px;
+  width: 20px;
+  height: 20px;
+  border: solid 1px;
+  background-color: white;
+  border-radius: 100%;
+}
+.svgIcon > svg {
+  width: 16px;
+  margin-top: 1.6px;
+  margin-left: 1.8px;
+}
+.PCCSchart {
+  width: 100%;
+}
+.Hint {
+  list-style: none;
+}
+.Hint > details > details > img {
+  width: 30%;
+  flex-wrap: nowrap;
+}
+
+/* Q&A */
+.QnA > details {
+  font-size: 13px;
+  text-align: justify;
+  width: 100%;
+}
+.QnA > details > summary {
+  margin-top: 10px;
+  word-break: break-word;
+}
+.QnA > details > summary::before {
+  position: relative;
+  padding-right: 0.3em;
+}
+.QnA > details > p {
+  text-align: justify;
+  margin-top: 1em;
+  margin-left: 2em;
+  color: rgb(72, 72, 72);
+  word-break: break-word;
+}
+.QnA > details > p::before {
+  content: "⚫︎";
+  margin-left: -1em;
+  margin-right: 0em;
+}
+
+/* お問い合わせ */
+.inq > nav > ul {
+  list-style: none;
+  font-size: 13px;
+  text-align: center;
+  padding-left: 0em;
+}
+.inq > nav > ul > li {
+  display: inline-block;
+  margin: -1em 0.5em;
+  color: rgb(10, 23, 255)
+}
+
+/* 修正履歴 */
+.revi > dl > dd {
+margin: 1.5em 2em -1.5em 3em;
+font-size: 13px;
+text-align: justify;
+}
+.revi > dl > dd::before {
+content: "・";
+margin-left: -1em;
+}
+.revi > dl > dt {
+position: relative;
+font-weight: bold;
+font-size: 16px;
+text-align: justify;
+left: 2em;
+top: 0.3em;
+}
+.revi > dl > dt::after {
+content: "";
+position: absolute;
+top: 1.2em;
+left: 0;
+width: 6em;
+border-bottom: solid 1.3px #333;
+}
+.revi > dl { 
+word-break: break-word;
+position: relative;
+margin: 2em 0 3em;
+}
+.revi > dl::before {
+content: "";
+position: absolute;
+top: -1em;
+left: 50%;
+transform: translateX(-50%);
+width: 95%;
+border-bottom: dashed 1.3px #333;
+}
