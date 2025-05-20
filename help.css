@@ -147,8 +147,7 @@ a[target="_blank"]:hover {
   list-style: none;
 }
 .Hint > details > details > img {
-  width: 30%;
-  flex-wrap: nowrap;
+  width: 100%;
 }
 
 /* Q&A */
